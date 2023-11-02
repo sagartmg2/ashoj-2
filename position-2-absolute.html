@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .products {
+            /* width: 50%; */
+            background-color: antiquewhite;
+        }
+
+        .product {
+            width: 25%;
+            border: 1px solid;
+            padding: 1rem;
+            position: relative;
+        }
+
+        .product button {
+            position: absolute;
+            right: 0;
+            left: 0;
+            margin-left: auto;
+            margin-right: auto;
+            
+            bottom: 20px;
+            width: max-content;
+            display: none;
+        }
+
+        .product:hover button {
+            display: initial;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="products">
+        <div class="product">
+            <h2>Mobile</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eligendi doloribus error temporibus
+                neque aliquid explicabo, sapiente soluta rerum repellat, mollitia ipsum vitae quis repellendus animi
+                provident vel! Sint, rem?</p>
+            <button> Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Mobile</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eligendi doloribus error temporibus
+                neque aliquid explicabo, sapiente soluta rerum repellat, mollitia ipsum vitae quis repellendus animi
+                provident vel! Sint, rem?</p>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

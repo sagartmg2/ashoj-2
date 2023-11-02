@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* margin: 0; */
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            background-color: aqua;
+            height: 70vh;
+            width:50%;
+            display: flex;
+        }
+
+        .child{
+            /* width: 250px; */
+            width: 25%;
+            border: 1px solid;
+            padding: 1rem;
+        }
+
+        li{
+            font-size: 19px;
+            font-size: 16px;
+            font-size: 1rem;
+            font-size: 1em;
+        }
+
+        .description{
+            font-size: 24px;
+        }
+
+        @media(min-width:1000px){
+            :root{
+                font-size: 19px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>px</li>
+        <li>rem</li>
+        <li>em</li>
+        <li>vh</li>
+        <li>vw</li>
+        <li>%</li>
+    </ul>
+
+    <div class="parent">
+        <div class="child">child=1</div>
+        <div class="child">child=1</div>
+        <div class="child">child=1</div>
+        <div class="child">child-2</div>
+    </div>
+    <div class="description">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ducimus, minima et necessitatibus numquam molestiae velit accusamus voluptate! Qui magnam ipsam soluta magni dolorum commodi officiis sint obcaecati omnis mollitia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ducimus, minima et necessitatibus numquam molestiae velit accusamus voluptate! Qui magnam ipsam soluta magni dolorum commodi officiis sint obcaecati omnis mollitia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ducimus, minima et necessitatibus numquam molestiae velit accusamus voluptate! Qui magnam ipsam soluta magni dolorum commodi officiis sint obcaecati omnis mollitia.</p>
+
+    </div>
+</body>
+
+</html>

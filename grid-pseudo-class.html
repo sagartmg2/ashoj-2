@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        
+        .parent{
+            height: 500px;
+            width: 500px;
+            background-color: antiquewhite;
+            display: grid;
+            grid-template-columns: 250px 250px ;
+            grid-template-columns: 33.3%  33.3%  33.3%  ;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-template-columns: repeat(4,1fr) ;
+            grid-template-columns: repeat(3,1fr) ;
+            gap: 1rem;
+        }
+
+        .child{
+            height: 100px;
+            border: 1px solid;
+        }
+
+
+        /* pseudo class */
+        .parent :first-child, .parent :last-child{
+            background-color: red;
+        }
+
+        .parent :nth-child(3){
+            background-color: aqua;
+        }
+
+        h1:hover{
+            color:red
+        }
+
+        input:focus{
+            border-color: orange;
+            outline:transparent
+        }
+       button:active{
+        background-color: orange;
+       }
+
+    </style>
+</head>
+
+<body>
+    <h1>Projects - mobile first <span> inside..</span> </h1>
+
+    
+    <section class="parent">
+        <div class="child ">child-1</div>
+        <div class="child">child-2</div>
+        <div class="child ">
+            child-3
+        </div>
+        <div class="child">child-4</div>
+        <div class="child">child-5</div>
+        <div class="child">child-6</div>
+        <div class="child">child-7</div>
+        <div class="child">child-8</div>
+        <div class="child">child-9</div>
+        <div class="child">child-10</div>
+    </section>
+
+    <section class="description  ">
+        <p>one</p>
+        <p>two</p>
+        <p class=" ">three</p>
+    </section>
+
+    <form action="">
+
+        <input type="text">
+        <button> submit </button>
+    </form>
+
+    
+
+
+</body>
+
+</html>

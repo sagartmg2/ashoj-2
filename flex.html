@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /* margin: 0; */
+            padding: 0;
+        }
+
+        .flexbox{
+            height: 400px;
+            width: 400px;
+            background-color: antiquewhite;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;  
+            /* change the values of justify-content; */
+        }
+
+        .flex-item{
+            border: 1px solid;
+            height: 100px;
+            width: 100px;
+            padding: 5px;
+        }
+
+        header ul{
+            /* border: 1px solid; */
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <ul>
+            <li>
+                <a href="">home</a>
+            </li>
+            <li>
+                <a href="">about</a>
+            </li>
+            <li>
+                <a href="">contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- 
+        .flex-item*4>{flex-item-$}
+     -->
+
+    <div class="flexbox">
+        <div class="flex-item">flex-item-1</div>
+        <div class="flex-item">flex-item-2</div>
+    </div>
+
+</body>
+</html>
