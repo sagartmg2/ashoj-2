@@ -61,6 +61,12 @@
             transform: translateX(0%);
         }
 
+        .close-icon{
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+        }
+
         .banner {
             margin-top: 5.5rem;
         }
@@ -86,8 +92,14 @@
             <img src="./logo.svg" alt="">
             <p>Lasles vpn</p>
         </div>
-        <img class="hamgurger-icon" src="./iconmonstr-menu-right-lined.svg" />
-        <div class="sidebar">
+        <img 
+            onclick=' document.getElementById("sidebar").classList.add("active")  '
+        class="hamgurger-icon" src="./iconmonstr-menu-right-lined.svg" />
+
+        <div id='sidebar' class="sidebar">
+            <button
+                onclick='document.getElementById("sidebar").classList.remove("active")'
+             class="close-icon">close X</button>
             <nav>
                 <ul>
                     <li>about</li>
