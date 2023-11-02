@@ -7,3 +7,17 @@
 
 1. git status
 2. git add .
+
+
+3. git commit -m "<feature/msg>"
+    eg: git commit -m "html&css"
+4. git push 
+
+
+
+to clone 
+git clone <git_url>
+eg : git clone https://github.com/sagartmg2/ashoj-2
+
+to pull changes
+git pull
